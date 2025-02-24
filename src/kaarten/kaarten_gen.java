@@ -17,16 +17,19 @@ public class kaarten_gen {
 		int number = -1;
 		int indexcol = 0;
 		int index = 0;
+		// for loop voor de zwarten kaarten
 		for (int o = 0; o < 2; o++) {
 			zwartPestKaartIndex += 1;
 			for (int t = 0; t < 4; t++) {
 				System.out.println();
 				Kaart kaart = new Kaart(zwartpestkaarten[0], zwartpestkaarten[zwartPestKaartIndex] + " ", 0, 0);
 				kaarten.addKaart(kaart);
+				kaarten.addKoopstapel(kaart);
 				index++;
 			}
 		}
 
+		// for loop voor de normaalkaarten en pest kaarten coler
 		for (int i = 0; i < colers.length; i++) {
 			pestKaartenIndex = -1;
 			indexcol = 0;
@@ -38,6 +41,7 @@ public class kaarten_gen {
 				indexcol++;
 				index++;
 				kaarten.addKaart(kaart);
+				kaarten.addKoopstapel(kaart);
 				if (indexcol == 10) {
 					number = -1;
 				} else if (indexcol == 20) {
@@ -47,6 +51,7 @@ public class kaarten_gen {
 						for (int x = 0; x < 2; x++) {
 							kaart = new Kaart(colers[colerIndex], pestKaarten[pestKaartenIndex] + " ", 0, 0);
 							kaarten.addKaart(kaart);
+							kaarten.addKoopstapel(kaart);
 							index++;
 						}
 					}

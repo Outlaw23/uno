@@ -5,8 +5,8 @@ public class Kaart {
 	String[] pestKaarten = {"plus 2", "plus 4", "keer om", "beurt over slaan"};
 
 	// attributes
-	private String coler;
-	private String text;
+	private final String coler;
+	private final String text;
 	private int number;
 	private int waarde;
 	// attributes
