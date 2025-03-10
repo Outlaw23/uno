@@ -3,10 +3,9 @@ package players;
 import java.util.Scanner;
 
 public class Players_gen {
-
+	public int playerIndex = 0;
 	public void playersgen() {
 		players Players = new players();
-		int playerIndex = 0;
 		boolean loop = true;
 		while (loop) {
 		Scanner num = new Scanner(System.in);
@@ -21,7 +20,6 @@ public class Players_gen {
 					playerIndex++;
 					player player = new player("player", playerIndex);
 					Players.addPlayer(player);
-
 				}
 				Players.printPlayers();
 				loop = false;
@@ -29,6 +27,9 @@ public class Players_gen {
 		}
 
 
+	}
+	public int playerIndex() {
+		return playerIndex;
 	}
 
 

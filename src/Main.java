@@ -5,11 +5,28 @@ import spelregels.Spelregels;
 
 public class Main {
 	public static void main(String[] args) {
+		//kaarten
 		Kaarten kaarten = new Kaarten();
 		kaarten_gen kaartenGen = new kaarten_gen();
+		//spelregels
 		Spelregels spelregels = new Spelregels();
-//		kaartenGen.kaarten_gen();
+		// players
 		Players_gen playersGen = new Players_gen();
-		playersGen.playersgen();
+		// stapels
+		// random
+
+
+		Randomm rand = new Randomm();
+
+		kaartenGen.kaarten_gen();
+
+
+		while (true) {
+			playersGen.playersgen();
+			rand.getRandomKaart(kaartenGen.kaarten, playersGen.playerIndex);
+
+
+
+		}
 	}
 }

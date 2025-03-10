@@ -1,9 +1,10 @@
 package kaarten;
 
 public class kaarten_gen {
+	public Kaarten kaarten = new Kaarten();
 
 	public void kaarten_gen() {
-		Kaarten kaarten = new Kaarten();
+
 
 		// attributes
 		String[] colers = {"blauw", "groen", "rood", "geel"};
@@ -60,6 +61,7 @@ public class kaarten_gen {
 			}
 			kaarten.printKaart();
 			System.out.println(index);
+			System.out.println(kaarten.getKaartList().size());
 		}
 
 }
