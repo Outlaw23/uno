@@ -1,13 +1,12 @@
 package kaarten;
 
 import players.Players_gen;
-import stapels.legstapel;
 
 import java.util.ArrayList;
 
 public class Kaarten {
 	private ArrayList<Kaart> kaartList;
-	private ArrayList<legstapel> legstapel;
+	public ArrayList<Kaart> legstapel;
 	private ArrayList<Kaart> koopstapel;
 
 	public Kaarten() {
@@ -20,7 +19,7 @@ public class Kaarten {
 		this.kaartList.add(kaart);
 	}
 
-	public void addLegstapel(legstapel legstapel) {
+	public void addLegstapel(Kaart legstapel) {
 		this.legstapel.add(legstapel);
 	}
 
@@ -30,6 +29,10 @@ public class Kaarten {
 
 	public ArrayList<Kaart> getKaartList() {
 		return kaartList;
+	}
+
+	public ArrayList<Kaart> getLegstapel() {
+		return legstapel;
 	}
 
 	public void printKaart() {

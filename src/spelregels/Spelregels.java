@@ -8,8 +8,7 @@ public class Spelregels {
 
 	boolean opGooien = false;
 	Kaarten kaarten = new Kaarten();
-
-
+	
 	public void spelregel() {
 		// zwarten kaarten alltijd opgooien
 		if (kaart.getColer().equals("zwart")) {
