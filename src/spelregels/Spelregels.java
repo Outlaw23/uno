@@ -1,30 +1,16 @@
 package spelregels;
 
 import kaarten.Kaart;
-import kaarten.Kaarten;
+
+import java.util.ArrayList;
 
 public class Spelregels {
-	Kaart kaart;
-
-	boolean opGooien = false;
-	Kaarten kaarten = new Kaarten();
+	Kaart kaartt = new Kaart("blauw","",4,4);
+	public void spelregel(ArrayList<Kaart> legstapel) {
+		System.out.println(legstapel.get(legstapel.size() - 1).getColer());
+		if (legstapel.get(legstapel.size() - 1).getColer().equals(kaartt.getColer()))
+			System.out.println("kleur op kleur");
+		else if ()
+	}
 	
-	public void spelregel() {
-		// zwarten kaarten alltijd opgooien
-		if (kaart.getColer().equals("zwart")) {
-			opGooien = true;
-		}
-	}
-
-	public void pestKaartenActions() {
-
-	}
-
-	public void checker() {
-
-	}
-
-	public void checkerActions() {
-
-	}
 }

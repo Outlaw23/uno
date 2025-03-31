@@ -8,7 +8,6 @@ import java.util.Random;
 
 public class RandomBeginKaart {
 	public void beginKaart(Kaarten kaarten, ArrayList<Kaart> legstapel) {
-		Kaart kaart;
 		Random random = new Random();
 		boolean goedKaart = true;
 
