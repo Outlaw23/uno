@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class RandomBeginPlayer {
-	int beginPlayerIndex = 0;
+	public int beginPlayerIndex = 0;
 	public void randomBeginPlayer(Kaarten kaarten, int playerIndex, ArrayList<ArrayList<Kaart>> listArrayList) {
 		Random random = new Random();
 		ArrayList<Integer>

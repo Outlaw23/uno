@@ -23,7 +23,7 @@ public class kaarten_gen {
 			zwartPestKaartIndex += 1;
 			for (int t = 0; t < 4; t++) {
 				System.out.println();
-				Kaart kaart = new Kaart(zwartpestkaarten[0], zwartpestkaarten[zwartPestKaartIndex] + " ", 0, 0);
+				Kaart kaart = new Kaart(zwartpestkaarten[0], zwartpestkaarten[zwartPestKaartIndex] + " ", 0, 0,"pest");
 				kaarten.addKaart(kaart);
 				kaarten.addKoopstapel(kaart);
 				index++;
@@ -38,7 +38,7 @@ public class kaarten_gen {
 			colerIndex++;
 			for (int j = 0; j < 20; j++) {
 				number++;
-				Kaart kaart = new Kaart(colers[colerIndex], "", number, number);
+				Kaart kaart = new Kaart(colers[colerIndex], "", number, number,"normaal");
 				indexcol++;
 				index++;
 				kaarten.addKaart(kaart);
@@ -50,18 +50,19 @@ public class kaarten_gen {
 					for (int u = 0; u < 3; u++) {
 						pestKaartenIndex++;
 						for (int x = 0; x < 2; x++) {
-							kaart = new Kaart(colers[colerIndex], pestKaarten[pestKaartenIndex] + " ", 0, 0);
+							kaart = new Kaart(colers[colerIndex], pestKaarten[pestKaartenIndex] + " ", 0, 0,"pest");
 							kaarten.addKaart(kaart);
 							kaarten.addKoopstapel(kaart);
 							index++;
 						}
 					}
-					}
 				}
 			}
+		}
 			kaarten.printKaart();
 			System.out.println(index);
 			System.out.println(kaarten.getKaartList().size());
-		}
+		System.out.println(kaarten.getKoopstapel());
+	}
 
 }

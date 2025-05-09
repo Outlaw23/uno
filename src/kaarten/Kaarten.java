@@ -27,6 +27,10 @@ public class Kaarten {
 		this.koopstapel.add(koopstapel);
 	}
 
+	public ArrayList<Kaart> getKoopstapel() {
+		return koopstapel;
+	}
+
 	public ArrayList<Kaart> getKaartList() {
 		return kaartList;
 	}
@@ -50,6 +54,7 @@ public class Kaarten {
 			  System.out.println(kaartList.get(index).info());
 		}
 	}
+
 
 }
 
